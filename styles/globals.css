@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+.myheader {
+  float: right;
+  position: absolute;
+  top: 1rem;
+  color: #fff;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bantext {
+  /* top:20rem;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  display: flow;
+  left:35rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+/* .logo {
+  position: absolute;
+  left:-33rem;
+  font-size:5rem;
+  top: 0rem;
+  
+} */
+.cofee {
+  font-size:8rem;
+}
+.serving {
+  font-size: 2rem;
+  color: #DA9F5B !important;
+  font-weight: 500;
+}
+.about {
+  font-size: 3rem;
+  color: #DA9F5B;
+}
+.learnm:hover {
+background-color: blue !important;
+color: #fff !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.offer {
+  color: #DA9F5B;
+
+}
+input {
+  width: 250px;
+  border: #fff;
+  text-align: center;
+}
+.form {
+  background-color: cadetblue;
+  padding-top: 1px;
+  margin-top: 2rem;
+}
+
+ul li a{
+  color: #fff !important;
+  list-style: none !important;
+  text-decoration: none !important;
+
+}
+.logo{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 150px;
+}
+
+/* media query for responsive */
+
+@media(max-width:674px) {
+  .bantext {
+    top:40%;
   }
 }
