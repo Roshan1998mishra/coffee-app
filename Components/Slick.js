@@ -18,7 +18,7 @@ export default class SimpleSlider extends Component {
     return (
       <div>
         
-        <Slider {...settings}>
+        <Slider {...settings}> 
           <div>
             <Image className="w-full banner" src={carousel} alt="carousel"></Image>
           </div>

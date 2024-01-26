@@ -82,6 +82,12 @@ ul li a{
   width: 150px;
 }
 
+.nav{
+  display: flex;
+  gap: 1.25rem;
+  font-size: 24px !important;
+}
+
 /* media query for responsive */
 
 @media(max-width:674px) {
