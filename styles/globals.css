@@ -87,6 +87,10 @@ ul li a{
   gap: 1.25rem;
   font-size: 24px !important;
 }
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
 
 /* media query for responsive */
 
@@ -95,3 +99,4 @@ ul li a{
     top:40%;
   }
 }
+
